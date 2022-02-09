@@ -36,6 +36,11 @@ svrte := &serverremote{
 
 Limbopro\Yatta\Orz-3\Sabrina以及YuanMultx，YuanMultx参考前三者。
 
+自己配置可以参考
+
+- [官方配置说明](https://github.com/crossutility/Quantumult-X/blob/master/sample.conf)
+- [Quantumutlx不完全教程](https://www.notion.so/Quantumult-X-1d32ddc6e61c4892ad2ec5ea47f00917)
+
 ## 说明
 
 开始设想给Quantumultx所有配置项都进行一个结构化的配置，然后输出自己的配置内容。结构化的配置可以用于在不同的配置间解析并聚合。
