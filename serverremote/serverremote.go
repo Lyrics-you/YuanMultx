@@ -13,7 +13,7 @@ type serverremote struct {
 
 func ServerRemoteInit() *serverremote {
 	svrte := &serverremote{
-		Url:            "http://101.132.145.243:39789/merge",
+		Url:            "http://yourselfbooklink.com",
 		Tag:            "MergeClash",
 		UpdateInterval: "172800",
 		OptParser:      true,
