@@ -11,18 +11,28 @@ type serverremote struct {
 	ImgUrl         string
 }
 
-func ServerRemoteInit() *serverremote {
+func AddNicoRemote() string {
 	svrte := &serverremote{
-		Url:            "http://yourselfbooklink.com",
-		Tag:            "MergeClash",
+		Url:            "",
+		Tag:            "",
 		UpdateInterval: "172800",
 		OptParser:      true,
 		Enable:         true,
 	}
-	return svrte
+	return fmt.Sprintf("%s, tag=%s, update-interval=%s, opt-parser=%v, enabled=%v", svrte.Url, svrte.Tag, svrte.UpdateInterval, svrte.OptParser, svrte.Enable)
+}
+
+func AddFrogRemote() string {
+	svrte := &serverremote{
+		Url:            "",
+		Tag:            "",
+		UpdateInterval: "172800",
+		OptParser:      true,
+		Enable:         true,
+	}
+	return fmt.Sprintf("%s, tag=%s, update-interval=%s, opt-parser=%v, enabled=%v", svrte.Url, svrte.Tag, svrte.UpdateInterval, svrte.OptParser, svrte.Enable)
 }
 
 func ServerRemote() string {
-	svrte := ServerRemoteInit()
-	return fmt.Sprintf("%s, tag=%s, update-interval=%s, opt-parser=%v, enabled=%v", svrte.Url, svrte.Tag, svrte.UpdateInterval, svrte.OptParser, svrte.Enable)
+	return AddNicoRemote() + "\n" + AddFrogRemote()
 }
